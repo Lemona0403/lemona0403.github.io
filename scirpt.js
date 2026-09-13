@@ -10,8 +10,6 @@ const translations = {
     nameValue: 'Lam Man-Hei, Hanson',
     labelAge: 'Age:',
     ageValue: '20',
-    labelNationality: 'Nationality:',
-    nationalityValue: 'Chinese',
     labelLinkedIn: 'LinkedIn:',
     labelGitHub: 'GitHub:',
     skillsTitle: 'Skills',
@@ -44,8 +42,6 @@ const translations = {
     nameValue: '林文希，Hanson',
     labelAge: '年齡：',
     ageValue: '20',
-    labelNationality: '國籍：',
-    nationalityValue: '中國人',
     labelLinkedIn: 'LinkedIn：',
     labelGitHub: 'GitHub：',
     skillsTitle: '技能',
@@ -86,8 +82,6 @@ const applyLanguage = (lang) => {
   document.getElementById('nameValue').textContent = data.nameValue;
   document.getElementById('labelAge').textContent = data.labelAge;
   document.getElementById('ageValue').textContent = data.ageValue;
-  document.getElementById('labelNationality').textContent = data.labelNationality;
-  document.getElementById('nationalityValue').textContent = data.nationalityValue;
   document.getElementById('labelLinkedIn').textContent = data.labelLinkedIn;
   document.getElementById('labelGitHub').textContent = data.labelGitHub;
   document.getElementById('skillsTitle').textContent = data.skillsTitle;
