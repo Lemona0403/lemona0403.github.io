@@ -12,14 +12,15 @@
         <header class="header">
           <div class="top-row">
             <div class="name-block">
-              <h1>Lam Man-Hei, Hanson</h1>
-              <p>Student in Computer Science</p>
+              <h1 id="profileName">Lam Man-Hei, Hanson</h1>
+              <p id="profileTitle">Student in Computer Science</p>
             </div>
             <div class="contact-list">
-              <span>Email: mhlam0403@gmail.com</span>
-              <span>Phone: +852 61698780</span>
-              <span>Location: Hong Kong, China</span>
+              <span id="contactEmail">Email: mhlam0403@gmail.com</span>
+              <span id="contactPhone">Phone: +852 61698780</span>
+              <span id="contactLocation">Location: Hong Kong, China</span>
             </div>
+            <button id="langToggle" class="lang-toggle" type="button">中文版</button>
           </div>
         </header>
 
@@ -27,18 +28,18 @@
           <div class="grid">
             <aside>
               <section class="panel">
-                <h2>Basic Information</h2>
+                <h2 id="basicInfoTitle">Basic Information</h2>
                 <ul class="info-list">
-                  <li><span class="label">Name:</span> Lam Man-Hei, Hanson</li>
-                  <li><span class="label">Age:</span> 20</li>
-                  <li><span class="label">Nationality:</span> Chinese</li>
-                  <li><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/hanson-lam-756b37354" target="_blank" rel="noopener noreferrer">linkedin.com/in/hanson-lam-756b37354</a></li>
-                  <li><span class="label">GitHub:</span> <a href="https://github.com/Lemona0403" target="_blank" rel="noopener noreferrer">github.com/Lemona0403</a></li>
+                  <li><span class="label" id="labelName">Name:</span> <span id="nameValue">Lam Man-Hei, Hanson</span></li>
+                  <li><span class="label" id="labelAge">Age:</span> <span id="ageValue">20</span></li>
+                  <li><span class="label" id="labelNationality">Nationality:</span> <span id="nationalityValue">Chinese</span></li>
+                  <li><span class="label" id="labelLinkedIn">LinkedIn:</span> <a href="https://www.linkedin.com/in/hanson-lam-756b37354" target="_blank" rel="noopener noreferrer">linkedin.com/in/hanson-lam-756b37354</a></li>
+                  <li><span class="label" id="labelGitHub">GitHub:</span> <a href="https://github.com/Lemona0403" target="_blank" rel="noopener noreferrer">github.com/Lemona0403</a></li>
                 </ul>
               </section>
 
               <section class="panel">
-                <h2>Skills</h2>
+                <h2 id="skillsTitle">Skills</h2>
                 <div class="badge-wrap">
                   <span class="badge">HTML</span>
                   <span class="badge">CSS</span>
@@ -56,20 +57,20 @@
 
             <div>
               <section class="panel">
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title" id="educationTitle">Education</h2>
                 <ul class="timeline">
                   <li class="timeline-item">
-                    <h3>B.Sc. in Computer Science</h3>
-                    <div class="meta">The Chinese University of Hong Kong • 2024 - 2028</div>
-                    <p>
+                    <h3 id="degreeTitle">B.Sc. in Computer Science</h3>
+                    <div class="meta" id="eduMeta">The Chinese University of Hong Kong • 2024 - 2028</div>
+                    <p id="eduDesc">
                       Currently a year-3 student focusing on software engineering, web
                       technologies, human-computer interaction and Cybersecurity.
                     </p>
                   </li>
                   <li class="timeline-item">
-                    <h3>Relevant Coursework</h3>
-                    <div class="meta">Web Development, Data Structures, Algorithms</div>
-                    <p>
+                    <h3 id="courseworkTitle">Relevant Coursework</h3>
+                    <div class="meta" id="courseMeta">Web Development, Data Structures, Algorithms</div>
+                    <p id="courseDesc">
                       Completed advanced coursework in front-end development,
                       database systems, and application design.
                     </p>
@@ -78,29 +79,29 @@
               </section>
 
               <section class="panel">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title" id="projectsTitle">Projects</h2>
                 <div class="project-item">
-                  <h3>Portfolio Website</h3>
-                  <p>
+                  <h3 id="projectOneTitle">Portfolio Website</h3>
+                  <p id="projectOneDesc">
                     Designed and developed a personal portfolio to showcase projects,
                     skills, and professional experience with a modern and responsive UI.
                   </p>
                 </div>
                 <div class="project-item">
-                  <h3>Stay Tuned!</h3>
-                  <p>
+                  <h3 id="projectTwoTitle">Stay Tuned!</h3>
+                  <p id="projectTwoDesc">
                     ...
                   </p>
                 </div>
               </section>
 
               <section class="panel">
-                <h2 class="section-title">Working Experience</h2>
+                <h2 class="section-title" id="experienceTitle">Working Experience</h2>
                 <ul class="timeline">
                   <li class="timeline-item">
-                    <h3>Data Auditor Intern</h3>
-                    <div class="meta">China Mobile International (CMI) • 2026 Jul - 2026 Aug</div>
-                    <p>
+                    <h3 id="jobTitle">Data Auditor Intern</h3>
+                    <div class="meta" id="jobMeta">China Mobile International (CMI) • 2026 Jul - 2026 Aug</div>
+                    <p id="jobDesc">
                       Data Analytic Audit Intern in Internal Audit Department
                       Engage in AI agent for contract extraction development, including skill training and result checking
                       Arrange irregular data of attendance record of part-time staff using Python
@@ -114,5 +115,126 @@
         </main>
       </div>
     </div>
+
+    <script>
+      const translations = {
+        en: {
+          profileName: 'Lam Man-Hei, Hanson',
+          profileTitle: 'Student in Computer Science',
+          contactEmail: 'Email: mhlam0403@gmail.com',
+          contactPhone: 'Phone: +852 61698780',
+          contactLocation: 'Location: Hong Kong, China',
+          basicInfoTitle: 'Basic Information',
+          labelName: 'Name:',
+          nameValue: 'Lam Man-Hei, Hanson',
+          labelAge: 'Age:',
+          ageValue: '20',
+          labelNationality: 'Nationality:',
+          nationalityValue: 'Chinese',
+          labelLinkedIn: 'LinkedIn:',
+          labelGitHub: 'GitHub:',
+          skillsTitle: 'Skills',
+          educationTitle: 'Education',
+          degreeTitle: 'B.Sc. in Computer Science',
+          eduMeta: 'The Chinese University of Hong Kong • 2024 - 2028',
+          eduDesc: 'Currently a year-3 student focusing on software engineering, web technologies, human-computer interaction and Cybersecurity.',
+          courseworkTitle: 'Relevant Coursework',
+          courseMeta: 'Web Development, Data Structures, Algorithms',
+          courseDesc: 'Completed advanced coursework in front-end development, database systems, and application design.',
+          projectsTitle: 'Projects',
+          projectOneTitle: 'Portfolio Website',
+          projectOneDesc: 'Designed and developed a personal portfolio to showcase projects, skills, and professional experience with a modern and responsive UI.',
+          projectTwoTitle: 'Stay Tuned!',
+          projectTwoDesc: '...',
+          experienceTitle: 'Working Experience',
+          jobTitle: 'Data Auditor Intern',
+          jobMeta: 'China Mobile International (CMI) • 2026 Jul - 2026 Aug',
+          jobDesc: 'Data Analytic Audit Intern in Internal Audit Department Engage in AI agent for contract extraction development, including skill training and result checking Arrange irregular data of attendance record of part-time staff using Python Involve in several projects, including log auditing using SQL and AI skill development.',
+          toggleLabel: '中文版'
+        },
+        zh: {
+          profileName: '林文熙，Hanson',
+          profileTitle: '計算機科學學生',
+          contactEmail: '電郵：mhlam0403@gmail.com',
+          contactPhone: '電話：+852 61698780',
+          contactLocation: '地點：香港，中國',
+          basicInfoTitle: '基本資料',
+          labelName: '姓名：',
+          nameValue: '林文熙，Hanson',
+          labelAge: '年齡：',
+          ageValue: '20',
+          labelNationality: '國籍：',
+          nationalityValue: '中國人',
+          labelLinkedIn: 'LinkedIn：',
+          labelGitHub: 'GitHub：',
+          skillsTitle: '技能',
+          educationTitle: '教育背景',
+          degreeTitle: '計算機科學學士',
+          eduMeta: '香港中文大學 • 2024 - 2028',
+          eduDesc: '目前為三年級學生，主修軟件工程、網頁技術、人機互動及網絡安全。',
+          courseworkTitle: '相關課程',
+          courseMeta: '網頁開發、數據結構、演算法',
+          courseDesc: '修讀了前端開發、資料庫系統及應用程式設計等進階課程。',
+          projectsTitle: '項目',
+          projectOneTitle: '個人作品集網站',
+          projectOneDesc: '設計及開發個人作品集網站，用於展示項目、技能和專業經驗，採用現代且響應式的界面設計。',
+          projectTwoTitle: '敬請期待！',
+          projectTwoDesc: '...',
+          experienceTitle: '工作經驗',
+          jobTitle: '數據審計實習生',
+          jobMeta: '中國移動國際 (CMI) • 2026 年 7 月 - 2026 年 8 月',
+          jobDesc: '內部審計部數據分析審計實習生，參與 AI 合約抽取代理開發，包括技能訓練與結果核對；使用 Python 整理兼職員工出勤紀錄的異常數據；參與多個項目，包括使用 SQL 進行日誌審計及 AI 技能開發。',
+          toggleLabel: 'English'
+        }
+      };
+
+      const langToggle = document.getElementById('langToggle');
+      let currentLang = 'en';
+
+      const applyLanguage = (lang) => {
+        const data = translations[lang];
+        document.documentElement.lang = lang === 'zh' ? 'zh-HK' : 'en';
+
+        document.getElementById('profileName').textContent = data.profileName;
+        document.getElementById('profileTitle').textContent = data.profileTitle;
+        document.getElementById('contactEmail').textContent = data.contactEmail;
+        document.getElementById('contactPhone').textContent = data.contactPhone;
+        document.getElementById('contactLocation').textContent = data.contactLocation;
+        document.getElementById('basicInfoTitle').textContent = data.basicInfoTitle;
+        document.getElementById('labelName').textContent = data.labelName;
+        document.getElementById('nameValue').textContent = data.nameValue;
+        document.getElementById('labelAge').textContent = data.labelAge;
+        document.getElementById('ageValue').textContent = data.ageValue;
+        document.getElementById('labelNationality').textContent = data.labelNationality;
+        document.getElementById('nationalityValue').textContent = data.nationalityValue;
+        document.getElementById('labelLinkedIn').textContent = data.labelLinkedIn;
+        document.getElementById('labelGitHub').textContent = data.labelGitHub;
+        document.getElementById('skillsTitle').textContent = data.skillsTitle;
+        document.getElementById('educationTitle').textContent = data.educationTitle;
+        document.getElementById('degreeTitle').textContent = data.degreeTitle;
+        document.getElementById('eduMeta').textContent = data.eduMeta;
+        document.getElementById('eduDesc').textContent = data.eduDesc;
+        document.getElementById('courseworkTitle').textContent = data.courseworkTitle;
+        document.getElementById('courseMeta').textContent = data.courseMeta;
+        document.getElementById('courseDesc').textContent = data.courseDesc;
+        document.getElementById('projectsTitle').textContent = data.projectsTitle;
+        document.getElementById('projectOneTitle').textContent = data.projectOneTitle;
+        document.getElementById('projectOneDesc').textContent = data.projectOneDesc;
+        document.getElementById('projectTwoTitle').textContent = data.projectTwoTitle;
+        document.getElementById('projectTwoDesc').textContent = data.projectTwoDesc;
+        document.getElementById('experienceTitle').textContent = data.experienceTitle;
+        document.getElementById('jobTitle').textContent = data.jobTitle;
+        document.getElementById('jobMeta').textContent = data.jobMeta;
+        document.getElementById('jobDesc').textContent = data.jobDesc;
+        langToggle.textContent = data.toggleLabel;
+      };
+
+      langToggle.addEventListener('click', () => {
+        currentLang = currentLang === 'en' ? 'zh' : 'en';
+        applyLanguage(currentLang);
+      });
+
+      applyLanguage(currentLang);
+    </script>
   </body>
 </html>
